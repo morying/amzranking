@@ -1,0 +1,122 @@
+/* Sections Header
+--------------------------------*/
+
+.section-header h3 {
+    font-size: 36px;
+    color: #283d50;
+    text-align: center;
+    font-weight: 500;
+    position: relative;
+}
+
+.section-header p {
+    text-align: center;
+    margin: auto;
+    font-size: 15px;
+    padding-bottom: 60px;
+    color: #556877;
+    width: 50%;
+}
+
+/* Section with background
+--------------------------------*/
+
+.section-bg {
+    /*background: #ecf5ff;*/
+}
+
+/* Services Section
+--------------------------------*/
+
+#services {
+    padding: 60px 0 40px 0;
+    /*box-shadow: inset 0px 0px 12px 0px rgba(0, 0, 0, 0.1);*/
+}
+
+#services .box {
+    height: 178px;
+    padding: 30px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+    margin: 0 15px 40px 15px;
+    background: #fff;
+    box-shadow: 0 10px 29px 0 rgba(68, 88, 144, 0.1);
+    transition: all 0.3s ease-in-out;
+}
+
+#services .box:hover {
+    -webkit-transform: translateY(-5px);
+    transform: translateY(-5px);
+}
+
+#services .icon {
+    position: absolute;
+    left: -10px;
+    top: calc(50% - 32px);
+}
+
+#services .icon i {
+    font-size: 64px;
+    line-height: 1;
+    transition: 0.5s;
+}
+
+#services .title {
+    margin-left: 40px;
+    font-weight: 700;
+    margin-bottom: 15px;
+    font-size: 18px;
+}
+
+#services .title a {
+    color: #111;
+}
+
+#services .box:hover .title a {
+    color: #007bff;
+}
+
+#services .description {
+    font-size: 14px;
+    margin-left: 40px;
+    line-height: 24px;
+    margin-bottom: 0;
+}
+
+.chat {
+    position: fixed;
+    bottom: 125px;
+    right: 10px;
+    display: none;
+}
+.chat .box {
+    display: grid;
+    background: rgba(92, 77, 66, .8);
+    padding: 10px;
+    color: #fff;
+    justify-items: center;
+    font-size: 12px;
+    line-height: 20px;
+}
+.chat .box:hover {
+    text-decoration: none;
+}
+.chat .biz {
+    border-bottom: 1px solid #fff;
+}
+.chat img {
+    width: 25px;
+    height: 25px;
+}
+.chat .biz::after {
+    content: '业务咨询';
+}
+.chat .tek::after {
+    content: '技术支持';
+}
+@media (min-width: 992px) {
+    body.scrolled .chat {
+        display: block;
+    }
+}
